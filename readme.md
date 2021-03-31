@@ -9,4 +9,5 @@ Irie Vibes Roots Festival is coming back in 2022 with another edition of the Bac
 ## Third party software used:
 
 1 [Twitter Bootstrap](https://github.com/twbs/bootstrap)
+
 2 [Subrion CMS](https://github.com/intelliants/subrion)
