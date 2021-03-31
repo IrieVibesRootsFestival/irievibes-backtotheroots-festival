@@ -1,0 +1,156 @@
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+// ==========================================================================
+// Print styles.
+// Inlined to avoid the additional HTTP request: h5bp.com/r
+// ==========================================================================
+
+@media print {
+    @page { size: auto;  margin: 0mm; }
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; // Black prints faster: h5bp.com/s
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    title {
+        display: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    // Don't show links that are fragment identifiers,
+    // or use the `javascript:` pseudo protocol
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; // h5bp.com/t
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+    hr {
+        display: none !important;
+    }
+    // Bootstrap specific changes start
+
+    // Bootstrap components
+    .navbar {
+        display: none;
+    }
+    .btn,
+    .dropup > .btn {
+        > .caret {
+            border-top-color: #000 !important;
+        }
+    }
+    .label {
+        border: 1px solid #000;
+    }
+
+    .table {
+        border-collapse: collapse !important;
+
+        td,
+        th {
+            background-color: #fff !important;
+        }
+    }
+    .table-bordered {
+        th,
+        td {
+            border: 1px solid #ddd !important;
+        }
+    }
+
+    #panel-left {
+        display: none !important;
+    }
+
+    .m-header {
+        display: none !important;
+    }
+
+    .page {
+        &__heading {
+            display: none !important;
+        }
+
+        .wrap-group {
+            border: 2px dashed @brand-primary;
+            border-radius: 4px;
+            padding: 0;
+
+            .wrap-group-heading {
+                display: none !important;
+            }
+            .row {
+                border-bottom: 1px dashed @brand-primary;
+            }
+
+            .invoice_logo {
+                text-align: center;
+                border-bottom: 1px solid @brand-primary;
+            }
+        }
+    }
+
+    #debug, #debug-toggle {
+        display: none !important;
+    }
+
+    .form-actions {
+        display: none !important;
+    }
+
+    .col-lg-2,
+    .col-lg-4 {
+        display: inline-block;
+    }
+
+    .col-lg-2 {
+        width: 40% !important;
+    }
+    // Bootstrap specific changes end
+}
